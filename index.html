@@ -1,0 +1,68 @@
+HTML
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Explora la rica gastronomía mexicana, sus platos tradicionales como el mole y tacos al pastor, e ingredientes sagrados.">
+    <title>Gastronomía Mexicana - Inicio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/sabores-de-antano/css/style.css">
+</head>
+<body>
+
+    <header>
+        <h1 id="tituloPagina">Cultura y Sabor Mexicano</h1>
+    </header>
+
+    <nav class="barra-superior" aria-label="Navegación principal">
+        <ul>
+            <li><a href="/sabores-de-antano/index.html">Inicio</a></li>
+            <li class="menu-item" id="item-menu-principal">
+                <a href="#" id="btn-menu-texto">Menú &#9662;</a>
+                <ul class="submenu" id="submenu-principal">
+                    <li><a href="/sabores-de-antano/platos-tradicionales.html" id="link-platos">Platos Tradicionales</a></li>
+                    <li><a href="/sabores-de-antano/ingredientes-tradicionales.html" id="link-ingredientes">Ingredientes Tradicionales</a></li>
+                </ul>
+            </li>
+        </ul>
+        <div class="idiomas-borde">
+            <button onclick="cambiarIdioma('es')" aria-label="Cambiar idioma a Español">ES</button>
+            <button onclick="cambiarIdioma('en')" aria-label="Switch language to English">EN</button>
+        </div>
+    </nav>
+
+    <main>
+        <section class="slider-container">
+            <div class="slider">
+                <div class="slides">
+                    <img src="/sabores-de-antano/imagenes/tacos.jpg" alt="Tacos Mexicanos de pastor con piña" class="slide-img" width="800" height="400">
+                    <img src="/sabores-de-antano/imagenes/mole.jpg" alt="Plato de Mole Poblano con ajonjolí" class="slide-img" width="800" height="400">
+                    <img src="/sabores-de-antano/imagenes/pozole.jpg" alt="Pozole Tradicional mexicano" class="slide-img" width="800" height="400">
+                </div>
+                <button class="prev" onclick="moverSlider(-1)" aria-label="Imagen anterior">&#10094;</button>
+                <button class="next" onclick="moverSlider(1)" aria-label="Siguiente imagen">&#10095;</button>
+            </div>
+        </section>
+
+        <section style="text-align: center; padding: 20px;">
+            <div style="max-width: 800px; margin: 0 auto;">
+                <img src="/sabores-de-antano/imagenes/mujer.jpg" alt="Mujer mexicana con traje típico" style="width: 100%; max-width: 600px; height: auto; border-radius: 15px; margin-bottom: 20px; box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
+                
+                <h2 id="subtitulo">El Patrimonio Vivo de México</h2>
+                <p id="desc1" style="margin-bottom: 15px; line-height: 1.6;">
+                    La gastronomía mexicana es mucho más que alimento; es una manifestación cultural viva que entrelaza la historia milenaria de los pueblos indígenas con la herencia colonial.
+                </p>
+                <p id="desc2" style="line-height: 1.6;">
+                    En México, la cocina es un rito social. Representa la unión de las familias y la biodiversidad de nuestras tierras. Por su técnica, antigüedad y simbolismo, la UNESCO la ha reconocido como Patrimonio Cultural Inmaterial de la Humanidad.
+                </p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2026 Universidad Nacional Abierta y a Distancia (UNAD) - Estudiante: Leidy Maria Fuya Fuya</p>
+    </footer>
+
+    <script src="/sabores-de-antano/js/script.js"></script>
+</body>

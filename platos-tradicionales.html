@@ -1,0 +1,61 @@
+HTML
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Descubre los platos más emblemáticos de la gastronomía mexicana: desde los tradicionales Tacos al Pastor hasta el complejo Mole Poblano.">
+    <title>Platos Emblemáticos - Gastronomía Mexicana</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/sabores-de-antano/css/style.css">
+</head>
+<body>
+
+    <header>
+        <h1 id="tituloPagina">Sabores de Antaño</h1>
+    </header>
+
+    <nav class="barra-superior" aria-label="Navegación principal">
+        <ul>
+            <li><a href="/sabores-de-antano/index.html">INICIO</a></li>
+            <li class="menu-item" id="item-menu-principal">
+                <a href="#" id="btn-menu-texto">MENÚ &#9662;</a>
+                <ul class="submenu" id="submenu-principal">
+                    <li><a href="/sabores-de-antano/platos-tradicionales.html" id="link-platos">PLATOS TRADICIONALES</a></li>
+                    <li><a href="/sabores-de-antano/ingredientes-tradicionales.html" id="link-ingredientes">INGREDIENTES TRADICIONALES</a></li>
+                </ul>
+            </li>
+        </ul>
+        <div class="idiomas-borde">
+            <button onclick="cambiarIdioma('es')" aria-label="Cambiar idioma a Español">ES</button>
+            <button onclick="cambiarIdioma('en')" aria-label="Switch to English">EN</button>
+        </div>
+    </nav>
+
+    <main>
+        <section class="contenedor-platos">
+            <article class="tarjeta-plato">
+                <img src="/sabores-de-antano/imagenes/tacos2.jpg" alt="Tres tacos al pastor" width="600" height="400">
+                <div class="contenido-card">
+                    <h2 id="t1">Tacos al Pastor: La Joya de la Corona</h2>
+                    <p id="d1">Los tacos al pastor son el resultado de un fascinante mestizaje cultural. Surgieron de la adaptación del shawarma libanés a los ingredientes locales mexicanos. La carne de cerdo se marina durante horas en una mezcla de achiote, vinagre, chiles secos y especias secretas.</p>
+                </div>
+            </article>
+
+            <article class="tarjeta-plato">
+                <img src="/sabores-de-antano/imagenes/imagenmole.jpg" alt="Pieza de pollo bañada en salsa de mole poblano." width="600" height="400">
+                <div class="contenido-card">
+                    <h2 id="t2">Mole Poblano: Alquimia de Sabores</h2>
+                    <p id="d2">Considerado el plato nacional de México, el mole poblano es una obra maestra de la cocina barroca. Su elaboración es un proceso ritual que puede durar días, donde se muelen y fríen más de 20 ingredientes, incluyendo chiles, almendras y chocolate amargo.</p>
+                </div>
+            </article>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2026 Universidad Nacional Abierta y a Distancia (UNAD) - Estudiante: Leidy Maria Fuya Fuya</p>
+    </footer>
+
+    <script src="/sabores-de-antano/js/script.js"></script>
+</body>
+</html>
